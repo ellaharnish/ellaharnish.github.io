@@ -3164,7 +3164,7 @@ input, select, textarea {
 
 /* Password */
 
-	.passwordbox {
+	.entry {
 		height: 200px;
 	  width: 300px;
 		padding-top: 10%;
