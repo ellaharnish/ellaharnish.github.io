@@ -2593,14 +2593,24 @@ input, select, textarea {
 				transition: transform 0.5s ease;
 				position: relative;
 				display: block;
-				width: 100%;
+				width: auto;
+				height: 300px;
 				border-radius: 4px;
 				overflow: hidden;
 			}
 
 				.tiles article > .image img {
-					display: block;
-					width: 100%;
+					position: absolute;
+					width: auto;
+					height: 100%;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+				}
+
+				.tiles article > .image.landscape {
+					height: 100%;
+					width: auto;
 				}
 
 				.tiles article > .image:before {
@@ -2634,7 +2644,7 @@ input, select, textarea {
 					left: 0;
 					width: 100%;
 					height: 100%;
-					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 0.25px%3B stroke: %23ffffff%3B %7D%3C/style%3E%3Cline x1='0' y1='0' x2='100' y2='100' /%3E%3Cline x1='100' y1='0' x2='0' y2='100' /%3E%3C/svg%3E");
+
 					background-position: center;
 					background-repeat: no-repeat;
 					background-size: 100% 100%;
@@ -2706,7 +2716,7 @@ input, select, textarea {
 					}
 
 			.tiles article.style1 > .image:before {
-				background-color: #FFFFFF;
+				background-color: #7bd0c1;
 			}
 
 			.tiles article.style2 > .image:before {
@@ -3161,6 +3171,18 @@ input, select, textarea {
 			}
 
 		}
+
+/* Password */
+
+	.entry {
+		height: 200px;
+	  width: 300px;
+		padding-top: 10%;
+		text-align: center;
+		display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	}
 
 /* Footer */
 
