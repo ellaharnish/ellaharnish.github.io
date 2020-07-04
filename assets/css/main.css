@@ -2572,7 +2572,7 @@ input, select, textarea {
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		postiion: relative;
+		position: relative;
 		margin: -2.5em 0 0 -2.5em;
 	}
 
@@ -2593,24 +2593,16 @@ input, select, textarea {
 				transition: transform 0.5s ease;
 				position: relative;
 				display: block;
-				width: auto;
-				height: 300px;
+				width: 100%;
 				border-radius: 4px;
 				overflow: hidden;
 			}
 
 				.tiles article > .image img {
-					position: absolute;
-					width: auto;
-					height: 100%;
-					top: 50%;
-					left: 50%;
-					transform: translate(-50%, -50%);
-				}
-
-				.tiles article > .image.landscape {
-					height: 100%;
-					width: auto;
+					display: block;
+					width: 100%;
+					height: 300px;
+					object-fit: cover;
 				}
 
 				.tiles article > .image:before {
@@ -2644,8 +2636,6 @@ input, select, textarea {
 					left: 0;
 					width: 100%;
 					height: 100%;
-
-					background-position: center;
 					background-repeat: no-repeat;
 					background-size: 100% 100%;
 					opacity: 0.25;
@@ -2693,6 +2683,7 @@ input, select, textarea {
 
 				.tiles article > a:hover {
 					color: #ffffff !important;
+					text-shadow: 0.25px 0.25px 3px #323232;
 				}
 
 				.tiles article > a h2 {
@@ -2716,7 +2707,7 @@ input, select, textarea {
 					}
 
 			.tiles article.style1 > .image:before {
-				background-color: #ae85ca;
+				background-color: #f2849e;
 			}
 
 			.tiles article.style2 > .image:before {
@@ -3171,18 +3162,6 @@ input, select, textarea {
 			}
 
 		}
-
-/* Password */
-
-	.entry {
-		height: 200px;
-	  width: 300px;
-		padding-top: 10%;
-		text-align: center;
-		display: block;
-	  margin-left: auto;
-	  margin-right: auto;
-	}
 
 /* Footer */
 
